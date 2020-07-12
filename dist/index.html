@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niramit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ACCOUNT -->
+    <div class="admin-panel">
+      <div class="contacts-bar">
+        <select name="lenguage" id="leng">
+          <option value="leng" selected>ENG</option>
+          <option value="leng">RU</option>
+        </select>
+      </div>
+      <div class="account">
+        <span class="userName"></span>
+        <button class="log-in">Login / Register</button>
+      </div>
+    </div>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li class="nav-link main">Main</li>
+          <li class="nav-link catalogOn">Our goods</li>
+          <li class="nav-link aboutUs">About us</li>
+          <li class="nav-link faq">FAQ</li>
+        </ul>
+      </nav>
+      <div class="stash-and-search">
+        <form class="search">
+          <input type="search" class="search-input" placeholder="Search"/>
+          <button class="submit-search">
+            <img src="./img/search.svg" alt="" />
+          </button>
+        </form>
+        <a href="#" class="stash main-stash"><img src="./img/cart.svg" alt="stash"/><span class="stash-meter">0</span></a>
+        <span class="calc-products main-calc"> <span class="stash-dollars">0</span> $</span>
+      </div>
+          <div class="burger">
+            <input type="checkbox" id="burger-check"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="menu-burger" class="menu-burger">
+              <nav>
+                <ul>
+                  <li class="nav-link main">Main</li>
+                  <li class="nav-link catalogOn">Our goods</li>
+                  <li class="nav-link aboutUs">About us</li>
+                  <li class="nav-link faq">FAQ</li>
+                </ul>
+              </nav>
+              <div class="stash-and-search-burger">
+                <a href="#" class="stash main-stash"><img src="./img/cart.svg" alt="stash"/><p class="burger-stash-meter">0</p></a>
+                <div class="calc-products"> <p class="stash-dollars">0</p> $</div>
+              </div>
+            </div>
+            </div>
+    </header>
+    <!-- MAIN SCREEN -->
+    <div class="wrapper visible">
+      <div class="main-theme">
+        <div class="background-grd"></div>
+        <div class="main-text">
+          <span>WELCOME TO</span>
+          <h1>LoveCraft</h1>
+          <p>- ONLINE BEER STORE -</p>
+        </div>
+        <div class="swiper-container swiper-container-one">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/main-1.jpg" alt="beer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/main-2.jpg" alt="beer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/main-3.jpg" alt="beer" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/main-4.jpg" alt="beer" />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+          <div class="gradient-mask"></div>
+        </div>
+      </div>
+      <div class="sales">
+        <h2>For Sale</h2>
+        <div class="swiper-container swiper-container-two">
+          <div class="swiper-wrapper swipe-to">
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+         </div>
+      </div>
+      <div class="about">
+        <div class="lovecraft-photo">
+          <img src="./img/about.jpg" alt="our-team" />
+        </div>
+        <div class="about-text">
+          <img src="./img/logo.png" alt="logo" />
+          <div class="more-text">
+            <h2>Here you buy culture and beer!</h2>
+            <p>
+              The Lovecraft online store represents the beginning of a
+              <i>franchise</i> dedicated to the sale of international beers and
+              the associated merchandising.<br /><br /><br />With a rotating
+              product offer, we aim to bring our customers a diversified offer
+              of quality products throughout the year.<br /><br /><br />Have a
+              good shopping!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="adventages">
+        <h2 class="adventages-header">If you search of us</h2>
+        <div class="adventage">
+          <img src="./img/manybeer.jpg" alt="many" class="adventage-img" />
+          <h3 class="adventageHeader">Have a huge selection of beer</h3>
+          <p class="adventageText">
+            We have 100+ beer sorts, and this list is regularly updated
+          </p>
+        </div>
+        <div class="adventage">
+          <img
+            src="./img/deliverybeer.jpg"
+            alt="deliver"
+            class="adventage-img"
+          />
+          <h3 class="adventageHeader">Get it fast</h3>
+          <p class="adventageText">
+            We deliver your order within 1.5 hours within the city(FREE)
+          </p>
+        </div>
+        <div class="adventage">
+          <img src="./img/fresh.jpg" alt="fresh" class="adventage-img" />
+          <h3 class="adventageHeader">Get it fresh</h3>
+          <p class="adventageText">
+            Beer is stored in special refrigerators so that its taste remains
+            always fresh.
+          </p>
+        </div>
+        <div class="adventage">
+          <img src="./img/beersale.png" alt="sale" class="adventage-img" />
+          <h3 class="adventageHeader">You can save cash</h3>
+          <p class="adventageText">
+            We constantly spend actions and draws, so don't miss the chance to
+            buy goods at the discount!
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- REGISTER SCREEN -->
+    <div class="register-form">
+      <div class="breadcrumb">
+        <a href="#" class="main">Main</a>
+        <span>/</span>
+        <span class="this">My account</span>
+      </div>
+      <h2>My account</h2>
+      <div class="forms">
+        <div class="form-log-in">
+          <h3>Log in</h3>
+          <div class="login">
+            <label for="log-in">USERNAME</label>
+            <input type="text" id="log-in" />
+          </div>
+          <div class="pass">
+            <label for="log-pass">PASSWORD</label>
+            <input type="password" id="log-pass" />
+          </div>
+          <button id="log-button">Log in</button>
+        </div>
+        <div class="register">
+          <h3>Register new account</h3>
+          <div class="new-login">
+            <label for="reg-login">USERNAME</label>
+            <input type="text" id="reg-login" />
+          </div>
+          <div class="new-pass">
+            <label for="new-pass">PASSWORD</label>
+            <input type="password" id="new-pass" />
+          </div>
+          <div class="conf-pass">
+            <label for="conf-pass">CONFIRM PASSWORD</label>
+            <input type="password" id="conf-pass" />
+          </div>
+          <button id="reg-button">Register new account</button>
+        </div>
+      </div>
+    </div>
+    <!-- CATALOG -->
+    <div class="catalogWrapper">
+      <div class="staring">
+        <div class="select-price">
+          <h3>Price</h3>
+          <input type="number" class="min-price">
+          <input type="namber" class="max-price">
+        </div>
+        <div class="select-style">
+          <h3>Style</h3>
+          <select name="" id="style-select" class="style-select">
+
+          </select>
+        </div>
+        <div class="selcet-brewery">
+          <h3>Brewery</h3>
+          <select name="" id="brewery-select" class="brewery-select">
+
+          </select>
+        </div>
+      </div>
+      <div class="catalog"></div>
+    </div>
+    <!-- Item Page -->
+    <div class="item-page">
+      <h2 id="main-name"></h2>
+      <div class="item-page_content">
+        <div class="item-img">
+          <img src="" alt="item" id="item-img">
+        </div>
+        <div class="item-info">
+          <ul>
+            <li>
+              <span class="li-name">Name:</span>
+              <span id="li-name"></span>
+            </li>
+            <li><span class="li-brewery">Brewery:</span>
+              <span id="li-brewery"></span></li>
+            <li><span class="li-sort">Style:</span>
+              <span id="li-sort"></span></li>
+            <li><span class="li-alk">Alkohol:</span>
+              <span id="li-alk"></span></li>
+              <li><span class="li-volume">Volume:</span>
+                <span id="li-volume"></span></li>
+            <li><span class="li-price">Price:</span>
+              <span id="li-price"></span></li>
+          </ul>
+          <button id="toCart">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- About US -->
+    <div class="about-us-page">
+      <div class="first-about-block">
+        <div class="about-page_image">
+          <img src="./img/aboutUsImg.png" alt="about">
+          <div class="background-grd"></div>
+        </div>
+        <div class="about-page_text">
+          <img src="./img/logo.png" alt="logo">
+          <h2>We work to give you to taste the best brands of craft beer.</h2>
+          <p>The Site opened on July 12, 2020, where some brands are already part of our list of beers. As of 2021, you can count on countless other revolutionary brands worldwide, such as <strong>Lervig , Omnipollo , Mikkeller , Beavertown , Magic Rock , Brewdog , Cloudwater , Rogue , CRAK</strong> , among many others… Stay tuned to our website as each week will be a surprise.</p>
+        </div>
+      </div>
+      <div class="about-contacts">
+        <div class="questions">
+          <h3>Do you need any information?</h3>
+          <h3>Do you want to be our partner?</h3>
+          <h3>Do not hesitate to contact us!</h3>
+        </div>
+        <div class="contacts">
+          <div class="tel">
+            <h4>Our number:</h4>
+            <span class="inf">+375(25)9319778</span>
+          </div>
+          <div class="mail">
+            <h4>Our mail:</h4>
+            <span class="inf">Psixart1@gmail.com</span>
+          </div>
+          <div class="sicals">
+            <h4>Our socials:</h4>
+            <a href="https://vk.com/psixart1" class="vk"
+            ><img src="./img/vk.svg" alt="vk"
+          /></a>
+          <a href="https://www.instagram.com/kritok_art" class="inst"
+            ><img src="./img/instagram-sketched.svg" alt="inst"
+          /></a>
+          <a href="https://t.me/kritlol" class="tel"
+            ><img src="./img/telegram.svg" alt="tel"
+          /></a>
+          <a href="https://github.com/Kritok-by" class="git"
+            ><img src="./img/github.svg" alt="tel"
+          /></a>
+          </div>
+          <div class="adress">
+            <h4>Adress our office:</h4>
+            <span class="inf">BC "Parus", vulica Mielieža 1, Minsk 220113, Belarus</span>
+          </div>
+        </div>
+      </div>
+      <div class="labels">
+        <h2>Now we are working with</h2>
+        <div class="images">
+          <img src="./img/brewery/GuinnessLogo.png" alt="beer">
+          <img src="./img/brewery/herbsthaeuser.png" alt="beer">
+          <img src="./img/brewery/Hoegaarden-Logo.png" alt="beer">
+          <img src="./img/brewery/ohara.png" alt="beer">
+          <img src="./img/brewery/paullainer.png" alt="beer">
+          <img src="./img/brewery/Updated_Goose_Island_logo.png" alt="beer">
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1614.6159695551737!2d27.602970170270172!3d53.93926103973104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1593625571767!5m2!1sen!2sby"
+          width="100%"
+          height="600"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    <!-- Personal area -->
+    <div class="personal-area">
+      <div class="img-area">
+        <img src="./img/unknown.png" alt="user">
+        <div class="background-grd"></div>
+      </div>
+      <div class="content-area">
+        <h2 class="login-name">Welcome <span id='user-name'></span></h2>
+        <button class="logut">Log out</button>
+        <div class="edit-pass">
+          <h3>Edit password</h3>
+          <div class="old-pass">
+            <label for="old-password">Old password</label>
+            <input type="text" id="old-password">
+          </div>
+          <div class="new-pass">
+            <label for="new-password">New password</label>
+            <input type="text" id="new-password">
+          </div>
+          <button id='edit-pass'>Edit</button>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINER-CART -->
+    <div class="container-cart"></div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-text">
+        <div class="contacts">
+          <span class="tel">+375(25)9319778</span>
+          <span class="email">Psixart1@gmail.com</span>
+        </div>
+        <nav>
+          <li class="nav-link main">Main</li>
+          <li class="nav-link catalogOn">Our goods</li>
+          <li class="nav-link aboutUs">About us</li>
+          <li class="nav-link faq">FAQ</li>
+        </nav>
+        <div class="socials">
+          <h4>Follow Us</h4>
+          <a href="https://vk.com/psixart1" class="vk"
+            ><img src="./img/vk.svg" alt="vk"
+          /></a>
+          <a href="https://www.instagram.com/kritok_art" class="inst"
+            ><img src="./img/instagram-sketched.svg" alt="inst"
+          /></a>
+          <a href="https://t.me/kritlol" class="tel"
+            ><img src="./img/telegram.svg" alt="tel"
+          /></a>
+          <a href="https://github.com/Kritok-by" class="git"
+            ><img src="./img/github.svg" alt="tel"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-img"><img src="./img/footer.jpg" alt="solod" /></div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
