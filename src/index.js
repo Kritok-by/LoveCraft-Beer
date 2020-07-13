@@ -10,6 +10,7 @@ import {registration} from './registration/reg';
 import {editPass} from './registration/editPass';
 import {itemPageOn} from './catalog/itemPage';
 import {cart} from './catalog/cart';
+import {selectsAdd} from './catalog/selectsAdd';
 import {swiperOne, swiperTwo, addSwipers} from './slider/mainSlider';
 
 
@@ -28,6 +29,7 @@ addSales;
 registration();
 document.querySelector('.userName').addEventListener('click',accountOn);
 editPass();
+selectsAdd();
 itemPageOn();
 logOut();
 addSwipers();
