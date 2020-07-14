@@ -11,6 +11,7 @@ import {editPass} from './registration/editPass';
 import {itemPageOn} from './catalog/itemPage';
 import {cart} from './catalog/cart';
 import {selectsAdd} from './catalog/selectsAdd';
+import {filter} from './catalog/filter'
 import {swiperOne, swiperTwo, addSwipers} from './slider/mainSlider';
 
 
@@ -26,6 +27,7 @@ cbpAnimatedHeader;
 allProducts;
 cart;
 addSales;
+filter();
 registration();
 document.querySelector('.userName').addEventListener('click',accountOn);
 editPass();
@@ -40,6 +42,7 @@ for (let i = 0; i < catalogProducts.length; i++){
     initializeClock(".timer-of-sale" + catalogProducts[i].id, catalogProducts[i].timeout);
   }
 };
+console.log(allProducts);
 // document.querySelector('.form-log-in').addEventListener('submit', function(event){
 //   event.preventDefault();
 //   accountOn();

@@ -27,8 +27,6 @@ function selectsAdd(){
     option = new Option(breweryItem[i], breweryItem[i]);
     brewery.append(option);
   }
-
-  console.log(styleItem);
 }
 
 export{selectsAdd};

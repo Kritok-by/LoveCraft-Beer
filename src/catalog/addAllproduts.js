@@ -143,8 +143,8 @@ class AllProducts {
       itemCard.appendChild(imgBox);
       itemCard.appendChild(aboutCard);
       wrapper.appendChild(itemCard);
+      this.containerProducts.appendChild(wrapper);
     }
-    this.containerProducts.appendChild(wrapper);
   }
 }
 

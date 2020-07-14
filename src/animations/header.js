@@ -3,7 +3,7 @@ let cbpAnimatedHeader = (function() {
       let docElem = document.documentElement,
           header = document.querySelector('.header'),
           didScroll = false,
-          changeHeaderOn = 300;
+          changeHeaderOn = 200;
 
 
 
