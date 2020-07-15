@@ -113,7 +113,7 @@ body {
         height: 100%;
         border: none;
         outline: none;
-        border-radius: 0;
+        border-radius: 3px;
         z-index: 16;
       }
       .submit-search {
@@ -647,6 +647,32 @@ footer {
   }
   .staring{
     background-color: #f1efee;
+    align-items: center;
+    font-family: "Niramit", sans-serif;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    input, select{
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      width: 80%;
+      height: 30px;
+      padding: 0 10px;
+    }
+    .select-price{
+      label{
+        font-size: 12px;
+        margin-bottom: 5px;
+        display: block;
+      }
+      input{
+        margin-bottom: 15px;
+      }
+    }
+    .selcet-brewery, .select-style{
+      width: 100%;
+
+    }
   }
   .catalog {
     padding-left: 30px;

@@ -1,10 +1,12 @@
 import {allProducts} from './addAllproduts';
 import {getProductItem } from "./getProductItem";
 import {store} from "../catalog/addToStash";
+import {catalogProducts} from './produts';
 
 function filter(){
   let products = store.getProducts(),
       summ = 0,
+      filterProducts = catalogProducts,
       wrapper = document.createElement("div");
       wrapper.classList.add("cards");
 
@@ -131,6 +133,7 @@ function filter(){
       itemCard.appendChild(aboutCard);
       wrapper.appendChild(itemCard);
       allProducts.containerProducts.appendChild(wrapper);
+
   }
 
 
@@ -141,9 +144,12 @@ function filter(){
     allProducts.catalogAllProducts.forEach((elem)=>{
       if(elem.sort == document.getElementById('style-select').value){
         addElements(elem);
+        // filterProducts.splice(0, filterProducts.length, elem);
+        // console.log(filterProducts);
 
     } else if (document.getElementById('style-select').value == 'all'){
       addElements(elem);
+
     }
   })
   })
@@ -157,8 +163,28 @@ function filter(){
       addElements(elem);
     }
   })
-  console.log(allProducts.createProducts);
-    // event.preventDefault();
+  })
+  document.querySelector('.min-price').addEventListener('input', function(){
+    allProducts.containerProducts.innerHTML = '';
+    wrapper.innerHTML = '';
+    allProducts.catalogAllProducts.forEach((elem)=>{
+      if(elem.price >= document.querySelector('.min-price').value){
+        addElements(elem);
+    } else if (document.querySelector('.min-price').value == ''){
+      addElements(elem);
+    }
+  })
+  })
+  document.querySelector('.max-price').addEventListener('input', function(){
+    allProducts.containerProducts.innerHTML = '';
+    wrapper.innerHTML = '';
+    allProducts.catalogAllProducts.forEach((elem)=>{
+      if(elem.price <= document.querySelector('.max-price').value){
+        addElements(elem);
+    } else if (document.querySelector('.max-price').value == ''){
+      addElements(elem);
+    }
+  })
   })
 }
 
