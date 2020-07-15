@@ -22,9 +22,7 @@ function itemPageOn(){
 
         }
       })
-
-
-
+      console.log('1');
       document.querySelector('.item-page').classList.add('visible')
     })
   }

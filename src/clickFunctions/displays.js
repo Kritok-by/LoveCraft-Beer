@@ -13,6 +13,8 @@ function main(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.remove('visible-grid');
       document.querySelector('.header').classList.remove('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       swiperOne, swiperTwo,
       cbpAnimatedHeader;
       window.scrollTo(0, 0);
@@ -27,6 +29,8 @@ function main(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.remove('visible-grid');
       document.querySelector('.header').classList.remove('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       swiperOne, swiperTwo,
       cbpAnimatedHeader;
       window.scrollTo(0, 0);
@@ -44,6 +48,8 @@ function regLogin(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.remove('visible-grid');
       document.querySelector('.header').classList.add('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       window.scrollTo(0, 0);
     })
   }
@@ -59,6 +65,8 @@ function catalogOn(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.remove('visible-grid');
       document.querySelector('.header').classList.add('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       window.scrollTo(0, 0);
     })
   }
@@ -73,6 +81,8 @@ function accountOn(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.remove('visible-grid');
       document.querySelector('.header').classList.add('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       window.scrollTo(0, 0);
   }
 }
@@ -87,6 +97,8 @@ function aboutUsOn(){
       document.querySelector('.item-page').classList.remove('visible');
       document.querySelector('.about-us-page').classList.add('visible-grid');
       document.querySelector('.header').classList.add('other-header');
+      document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
       window.scrollTo(0, 0);
     });
   }
@@ -99,6 +111,8 @@ function logOut (){
     document.querySelector('.wrapper').classList.add('visible');
     document.querySelector('.personal-area').classList.remove('visible-grid');
     document.querySelector('.header').classList.remove('other-header');
+    document.getElementById('menu-burger').classList.remove('burger-on');
+    document.getElementById('burger-check').checked = false;
     window.scrollTo(0, 0);
   })
 }
@@ -106,6 +120,7 @@ function burger(){
   document.getElementById('burger-check').addEventListener('click', ()=>{
     if(document.getElementById('menu-burger').classList.contains('burger-on')){
       document.getElementById('menu-burger').classList.remove('burger-on');
+      document.getElementById('burger-check').checked = false;
     } else {
       document.getElementById('menu-burger').classList.add('burger-on');
     }

@@ -15,7 +15,6 @@ function filter(){
         activeText;
         allProducts.containerCounter.innerHTML = products.length;
       document.querySelector(".burger-stash-meter").innerHTML = products.length;
-
       if (localStorage.getItem("howDollars") !== null) {
         for (let dollars of document.querySelectorAll(".stash-dollars")) {
           dollars.innerText = localStorage.getItem("howDollars");

@@ -56,12 +56,15 @@
     grid-template-columns: 1fr;
     .staring{
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
        align-items: center;
        padding-bottom: 20px;
        width: 95%;
        margin: 0 auto;
        margin-bottom: 30px;
+       .select-price, .select-style, .selcet-brewery{
+         width: 30%;
+       }
     }
     .catalog {
       padding: 0;
@@ -101,6 +104,14 @@
   }
   .container-cart{
     width: 80%;
+  }
+  .item-page{
+    .item-page_content{
+
+      .item-img{
+        flex-basis: 40%;
+      }
+    }
   }
 }
 
@@ -152,10 +163,19 @@
     }
   }
   .catalogWrapper{
+    .staring{
+      padding: 0 2.5%;
+      justify-content: center;
+      padding-bottom: 20px;
+      .select-price, .select-style, .selcet-brewery{
+        width: 90%;
+      }
+   }
     .catalog{
       .cards{
         .card{
-          flex-basis: 90%;
+          flex-basis: 70%;
+
         }
       }
     }
@@ -214,6 +234,33 @@
       }
     }
   }
+  .item-page{
+
+    h2{
+      margin-left: 40px;
+    }
+    .item-page_content{
+
+      .item-img{
+        flex-basis: 100%;
+        img{
+          width: 50%;
+        }
+      }
+      .item-info{
+        flex-basis: 100%;
+        ul{
+          margin: 0 auto;
+          span[class]{
+            margin-right: 45%;
+          }
+          span[id]{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }
 @media(max-width:480px){
 
@@ -229,11 +276,25 @@
     .sales{
       .swiper-container-two{
           .card{
-            width: 80%;
+            width: 100%;
           }
         }
       }
 
+  }
+  .catalogWrapper{
+    .staring{
+      .select-price{
+        width: 100%;
+      }
+    }
+    .catalog{
+      .cards{
+        .card{
+          flex-basis: 90%;
+        }
+      }
+    }
   }
   footer{
     .footer-text{
@@ -245,15 +306,24 @@
       }
 
     }
-    .about-us-page {
-        .contacts {
-          text-align: center;
-          div{
-            flex-basis: 90%;
-          }
-        }
-    }
   }
+      .about-us-page {
+        h3{
+          font-size: 20px;
+          text-align: center;
+        }
+          .contacts {
+            text-align: center;
+            div{
+              flex-basis: 90%;
+            }
+          }
+          .labels{
+            .images{
+              justify-content: center;
+            }
+          }
+      }
   .register-form {
       input{
         width: 100%;

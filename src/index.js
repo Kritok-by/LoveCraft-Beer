@@ -8,10 +8,10 @@ import {allProducts} from './catalog/addAllproduts';
 import {autorisation} from './registration/login';
 import {registration} from './registration/reg';
 import {editPass} from './registration/editPass';
+import {selectsAdd} from './catalog/selectsAdd';
+import {filter} from './catalog/filter';
 import {itemPageOn} from './catalog/itemPage';
 import {cart} from './catalog/cart';
-import {selectsAdd} from './catalog/selectsAdd';
-import {filter} from './catalog/filter'
 import {swiperOne, swiperTwo, addSwipers} from './slider/mainSlider';
 
 
