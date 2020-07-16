@@ -2,6 +2,7 @@ import {allProducts} from './addAllproduts';
 import {getProductItem } from "./getProductItem";
 import {store} from "../catalog/addToStash";
 import {catalogProducts} from './produts';
+import {itemPageOn} from './itemPage';
 
 function filter(){
   let products = store.getProducts(),
@@ -143,11 +144,13 @@ function filter(){
     allProducts.catalogAllProducts.forEach((elem)=>{
       if(elem.sort == document.getElementById('style-select').value){
         addElements(elem);
+        itemPageOn();
         // filterProducts.splice(0, filterProducts.length, elem);
         // console.log(filterProducts);
 
     } else if (document.getElementById('style-select').value == 'all'){
       addElements(elem);
+      itemPageOn();
 
     }
   })
@@ -158,8 +161,10 @@ function filter(){
     allProducts.catalogAllProducts.forEach((elem)=>{
       if(elem.brewery == document.getElementById('brewery-select').value){
         addElements(elem);
+        itemPageOn();
     } else if (document.getElementById('brewery-select').value == 'all'){
       addElements(elem);
+      itemPageOn();
     }
   })
   })
@@ -169,8 +174,10 @@ function filter(){
     allProducts.catalogAllProducts.forEach((elem)=>{
       if(elem.price >= document.querySelector('.min-price').value){
         addElements(elem);
+        itemPageOn();
     } else if (document.querySelector('.min-price').value == ''){
       addElements(elem);
+      itemPageOn();
     }
   })
   })
@@ -180,8 +187,10 @@ function filter(){
     allProducts.catalogAllProducts.forEach((elem)=>{
       if(elem.price <= document.querySelector('.max-price').value){
         addElements(elem);
+        itemPageOn();
     } else if (document.querySelector('.max-price').value == ''){
       addElements(elem);
+      itemPageOn();
     }
   })
   })

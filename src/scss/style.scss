@@ -860,9 +860,23 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     .item-img{
+      background-position: 50% 50%;
+      position: relative;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      cursor: zoom-in;
       flex-basis: 45%;
+      &:hover{
+        background-size: 300%;
+      }
       img{
         width: 100%;
+        transition: opacity .5s;
+        display: block;
+        &:hover{
+          opacity: 0;
+        }
       }
     }
 
