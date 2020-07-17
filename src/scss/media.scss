@@ -112,8 +112,9 @@
 
       .item-img{
         flex-basis: 40%;
+        background-size: 0px;
         &:hover{
-          background-size: 100%;
+          background-size: 0px;
         }
         img{
           &:hover{
@@ -262,7 +263,7 @@
         ul{
           margin: 0 auto;
           span[class]{
-            margin-right: 45%;
+            margin-right: 60%;
           }
           span[id]{
             display: inline-block;

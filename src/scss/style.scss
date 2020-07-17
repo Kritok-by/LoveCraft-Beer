@@ -115,6 +115,8 @@ body {
         outline: none;
         border-radius: 3px;
         z-index: 16;
+        -webkit-appearance: none;
+        appearance: none;
       }
       .submit-search {
         position: absolute;
@@ -670,10 +672,17 @@ footer {
       }
       input{
         margin-bottom: 15px;
+        -webkit-appearance: none;
+        appearance: none;
       }
     }
     .selcet-brewery, .select-style{
       width: 100%;
+      select{
+
+        -webkit-appearance: none;
+         appearance: none;
+      }
 
     }
   }
@@ -912,7 +921,7 @@ footer {
         }
       }
     }
-    #toCart{
+    .toCart{
       margin-left: 40px;
       margin-top: 40px;
     }
